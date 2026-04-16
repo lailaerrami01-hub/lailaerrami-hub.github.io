@@ -3,83 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERRAMI Laila | Ingénierie Aéronautique</title>
+    <title>ERRAMI Laila | Ingénieure Aéronautique & Espace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --primary: #002e5d; --accent: #00a8e8; --bg: #f8f9fa; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; background: var(--bg); }
-        header { background: var(--primary); color: white; padding: 60px 20px; text-align: center; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-        .container { max-width: 1000px; margin: -50px auto 40px; padding: 20px; }
-        .card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid var(--accent); }
-        h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
-        h2 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .tag { background: #e1ecf4; color: #39739d; padding: 4px 10px; border-radius: 4px; font-size: 0.85em; font-weight: bold; margin-right: 5px; display: inline-block; }
-        .contact-info { margin-top: 15px; font-weight: 300; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        :root { --nav-bg: #001529; --primary: #002e5d; --accent: #00a8e8; --text: #333; --light-bg: #f0f2f5; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--text); scroll-behavior: smooth; background: var(--light-bg); }
+        
+        /* Navigation */
+        nav { background: var(--nav-bg); padding: 1rem; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 500; font-size: 0.9em; text-transform: uppercase; }
+
+        header { background: linear-gradient(rgba(0,46,93,0.9), rgba(0,46,93,0.9)), url('https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1350&q=80'); background-size: cover; color: white; padding: 120px 20px 80px; text-align: center; }
+        
+        .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        h2 { text-align: center; color: var(--primary); margin-bottom: 40px; position: relative; }
+        h2::after { content: ''; display: block; width: 50px; height: 3px; background: var(--accent); margin: 10px auto; }
+
+        /* Grille de Projets */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+        .project-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: 0.3s; }
+        .project-card:hover { transform: translateY(-10px); }
+        .project-content { padding: 20px; }
+        .project-tag { background: var(--accent); color: white; padding: 2px 10px; border-radius: 20px; font-size: 0.75em; }
+
+        /* Para-universitaire */
+        .club-box { background: white; padding: 30px; border-radius: 15px; border-left: 8px solid #ffd700; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>ERRAMI LAILA</h1>
-    <p>Étudiante en Génie Aéronautique et Technologie de l'Espace</p>
-    <div class="contact-info">
-        📍 Agadir | 📧 lailaerrami01@gmail.com | 📞 +212 689196713 [cite: 3, 4, 5]
-    </div>
+<nav>
+    <a href="#home">Accueil</a>
+    <a href="#experience">Expérience</a>
+    <a href="#projets">Projets CAO</a>
+    <a href="#para">Engagement</a>
+</nav>
+
+<header id="home">
+    <h1>LAILA ERRAMI</h1>
+    <p style="font-size: 1.2em; max-width: 700px; margin: auto;">Élève Ingénieure en 2ème année Cycle d'Ingénieur – Spécialité Génie Aéronautique et Technologie de l'Espace[cite: 8].</p>
 </header>
 
-<div class="container">
-    <section>
-        <h2>Expérience Professionnelle</h2>
-        <div class="card">
-            <h3>Royal Air Maroc (RAM) - Direction Technique [cite: 18]</h3>
-            <p><strong>Projet :</strong> Internalisation du remplacement des Bearing Cups (Boeing 737 NG) [cite: 18]</p>
+<section class="section" id="experience">
+    <h2><i class="fas fa-plane-departure"></i> Expérience Professionnelle</h2>
+    <div class="project-card" style="border-left: 5px solid var(--primary);">
+        <div class="project-content">
+            <h3>Royal Air Maroc (RAM) | Maintenance Aéronautique</h3>
+            <p><strong>Août 2025 :</strong> Projet d'internalisation du remplacement des Bearing Cups sur Boeing 737 NG[cite: 17, 18].</p>
             <ul>
-                <li>Application de la démarche <strong>DMAIC (Six Sigma)</strong>[cite: 20].</li>
-                <li>Conception de l'atelier sur <strong>AutoCAD</strong> et analyse des coûts[cite: 21, 22].</li>
-                <li>Optimisation du TAT et conformité EASA/FAA[cite: 23].</li>
+                <li>Diagnostic complet via la démarche <strong>DMAIC (Six Sigma)</strong>[cite: 20].</li>
+                <li>Conception de l'implantation de l'atelier sur <strong>AutoCAD</strong>[cite: 21].</li>
+                <li>Analyse financière des coûts d'externalisation vs internalisation[cite: 22].</li>
             </ul>
-            <span class="tag">Six Sigma</span> <span class="tag">AutoCAD</span> <span class="tag">Maintenance</span> [cite: 39]
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>Projets Techniques</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Drone à voilure fixe [cite: 30]</h3>
-                <p>Mission de cartographie aérienne avec commande robuste[cite: 30].</p>
-                <ul>
-                    <li>Lois de commande <strong>PID vs LQR</strong> sous MATLAB/Simulink[cite: 33, 34].</li>
-                    <li>Modélisation avec XFoil et OpenVSP[cite: 34].</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Aéronef Hybride [cite: 36]</h3>
-                <p>Dirigeable-Drone pour une stabilité optimale[cite: 36].</p>
-                <ul>
-                    <li>Modélisation 3D de l'architecture[cite: 38].</li>
-                    <li>Simulation aérodynamique du comportement en vol[cite: 39].</li>
-                </ul>
+<section class="section" id="projets">
+    <h2><i class="fas fa-drafting-compass"></i> Projets Techniques & CAO</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-content">
+                <span class="project-tag">CATIA V5 / SolidWorks</span>
+                <h3>Conception d'Aéronef Hybride</h3>
+                <p>Modélisation 3D complète de l'architecture d'un dirigeable-drone pour une stabilité optimale[cite: 36, 38]. Étude de stabilité et simulation aérodynamique.</p>
             </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Logiciels & Expertise [cite: 39]</h2>
-        <div class="card">
-            <p><strong>CAO/Simulation :</strong> CATIA V5, SolidWorks, Ansys, Abaqus, MATLAB/Simulink[cite: 39].</p>
-            <p><strong>Méthodes :</strong> Lean Manufacturing (Kanban, 5S), Six Sigma (DMAIC)[cite: 39].</p>
+        <div class="project-card">
+            <div class="project-content">
+                <span class="project-tag">MATLAB / Simulink</span>
+                <h3>Drone à voilure fixe</h3>
+                <p>Développement de lois de commande robustes (PID vs LQR) pour des missions de cartographie aérienne[cite: 30, 33].</p>
+            </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Engagement Associatif</h2>
-        <div class="card" style="border-left-color: #ffd700;">
-            <h3>Présidente AeroClub ENSAS (2025-2026) [cite: 39]</h3>
-            <p>Pilotage des activités aéronautiques et management d'équipe[cite: 39].</p>
+        <div class="project-card">
+            <div class="project-content">
+                <span class="project-tag">Robotique</span>
+                <h3>Robot d'Inspection Falcon</h3>
+                <p>Responsable entrepreneuriat au sein du FalconClub. Développement d'un prototype équipé de capteurs de gaz et de fumée pour la sécurité industrielle.</p>
+            </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+<section class="section" id="para">
+    <h2><i class="fas fa-users"></i> Engagement Para-Universitaire</h2>
+    <div class="club-box">
+        <h3>Présidente de l'AéroClub ENSAS (2025-2026) </h3>
+        <p>En tant que présidente, je dirige une équipe passionnée pour promouvoir la culture aéronautique. Nous organisons des ateliers techniques comme le <em>Space Camp</em> et <em>Astro Kids</em>, visant à vulgariser les sciences de l'espace pour les jeunes étudiants.</p>
+    </div>
+</section>
+
+<footer style="text-align: center; padding: 40px; background: var(--nav-bg); color: white;">
+    <p>Contact : lailaerrami01@gmail.com | LinkedIn : ERRAMI Laila [cite: 3, 6]</p>
+</footer>
 
 </body>
 </html>
