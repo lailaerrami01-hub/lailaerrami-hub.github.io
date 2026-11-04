@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Engineering & Quality</title>
+    <title>Laila Errami | Ingénieure Aéronautique & Qualité</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,9 +11,10 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Portfolio</div>
+        <div class="logo">Laila Errami</div>
         <ul class="nav-links">
             <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expériences</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,14 +24,35 @@
     <!-- Header / Hero -->
     <header id="about" class="hero">
         <div class="hero-content">
-            <h1>Génie Aéronautique & Digitalisation Qualité</h1>
-            <p>Spécialisée en Amélioration Continue (Lean/DMAIC), Analyse de Données Industrielles et Contrôle de Vol.</p>
+            <h1>Ingénieure en Génie Aéronautique & Technologies de l'Espace</h1>
+            <p>Spécialisée en Qualité Produit, Amélioration Continue (Lean/Six Sigma) et Digitalisation Industrielle. Actuellement en recherche d'un stage de PFE (4 à 6 mois) dès février 2027.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary">Voir les projets</a>
-                <a href="https://github.com/lailaerrami01-hub" target="_blank" class="btn secondary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#projects" class="btn primary">Voir mes projets</a>
+                <a href="#experience" class="btn secondary">Parcours</a>
             </div>
         </div>
     </header>
+
+    <!-- Section Expériences -->
+    <section id="experience" class="section">
+        <h2>Expériences Professionnelles</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="badge">Juillet - Août 2026</span>
+                <h3>Stage - Qualité Produit & Amélioration Continue</h3>
+                <p><strong>LISI Aerospace (Lixus Industrie) - Tanger</strong></p>
+                <p>• Analyse des non-conformités (rebuts/scrap), Pareto, Ishikawa, 5 Pourquoi et démarche PDCA[cite: 4].</p>
+                <p>• Automatisation du suivi des rebuts via Excel/VBA et conception de tableaux de bord Power BI (KPI qualité)[cite: 4].</p>
+            </div>
+            <div class="skill-card">
+                <span class="badge">Août 2025</span>
+                <h3>Stage - Industrialisation & Amélioration Continue</h3>
+                <p><strong>Royal Air Maroc (Direction Technique) - Casablanca</strong>[cite: 4]</p>
+                <p>• Application de la démarche DMAIC / Six Sigma pour l'internalisation des Bearing Cups (roues Boeing 737 NG)[cite: 4].</p>
+                <p>• Diagnostic des processus (TAT, coûts) et conception d'un nouvel aménagement d'atelier sur AutoCAD[cite: 4].</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Section Compétences -->
     <section id="skills" class="section">
@@ -38,34 +60,34 @@
         <div class="skills-grid">
             <div class="skill-card">
                 <h3><i class="fas fa-microscope"></i> Qualité & Process</h3>
-                <p>ISO 9001, EN/AS 9100, Lean, DMAIC, 5S, 5M/Ishikawa, AMDEC, APQP</p>
+                <p>ISO 9001, EN/AS 9100, Lean Manufacturing, DMAIC, Six Sigma, 5M, Ishikawa, 5 Pourquoi, Pareto[cite: 4].</p>
             </div>
             <div class="skill-card">
-                <h3><i class="fas fa-chart-bar"></i> Data & BI</h3>
-                <p>Power BI (DAX, Power Query), Excel VBA, Analyse de Rebuts & TAT</p>
+                <h3><i class="fas fa-chart-bar"></i> Data & Digitalisation</h3>
+                <p>Power BI, Excel Avancé (Power Query, Power Pivot), VBA (Macros), Automatisation, Reporting[cite: 4].</p>
             </div>
             <div class="skill-card">
                 <h3><i class="fas fa-plane"></i> Aéronautique & CAO</h3>
-                <p>MATLAB/Simulink, FlightGear, CATIA V5, SolidWorks, AutoCAD, ANSYS</p>
+                <p>MATLAB/Simulink, FlightGear, CATIA V5, SolidWorks, AutoCAD, ANSYS, Abaqus, OpenVSP[cite: 4].</p>
             </div>
         </div>
     </section>
 
     <!-- Section Projets -->
     <section id="projects" class="section">
-        <h2>Projets Réalisés</h2>
+        <h2>Projets Académiques & Techniques</h2>
         <div class="projects-grid">
 
             <!-- Projet 1 -->
             <div class="project-card">
                 <div class="project-info">
-                    <span class="badge">Aéronautique</span>
-                    <h3>Architecture de Contrôle de Vol (Drone)</h3>
-                    <p>Conception et simulation sous MATLAB/Simulink d'une architecture complète de régulation (PID, LQR, SMC, MPC et filtre de Kalman) intégrée avec FlightGear.</p>
+                    <span class="badge">Aéronautique & Automatique</span>
+                    <h3>Stabilisation d'un Drone à Voilure Fixe</h3>
+                    <p>Modélisation de la dynamique de vol sous MATLAB/Simulink (Aerospace Blockset), conception d'une architecture de commande robuste et visualisation sous FlightGear[cite: 4].</p>
                     <div class="tags">
-                        <span>MATLAB</span>
-                        <span>Simulink</span>
+                        <span>MATLAB/Simulink</span>
                         <span>FlightGear</span>
+                        <span>Commande de vol</span>
                     </div>
                 </div>
             </div>
@@ -73,14 +95,13 @@
             <!-- Projet 2 -->
             <div class="project-card">
                 <div class="project-info">
-                    <span class="badge">Qualité Industrielle</span>
-                    <h3>Analyse de Données & Digitalisation</h3>
-                    <p>Développement de solutions d'automatisation VBA et de tableaux de bord Power BI pour le suivi des événements non conformes et l'analyse des causes racines.</p>
+                    <span class="badge">CAO & Simulation</span>
+                    <h3>Aéronef Hybride Dirigeable-Drone</h3>
+                    <p>Conception mécanique 3D complète sous SolidWorks (structure et architecture) et analyse aérodynamique des écoulements sous ANSYS[cite: 4].</p>
                     <div class="tags">
-                        <span>Power BI</span>
-                        <span>VBA</span>
-                        <span>Ishikawa</span>
-                        <span>5M</span>
+                        <span>SolidWorks</span>
+                        <span>ANSYS</span>
+                        <span>CFD & CAO</span>
                     </div>
                 </div>
             </div>
@@ -88,13 +109,13 @@
             <!-- Projet 3 -->
             <div class="project-card">
                 <div class="project-info">
-                    <span class="badge">Web & Décision</span>
-                    <h3>Plateforme AHP Multi-critères</h3>
-                    <p>Application web interactive basée sur le procédé AHP de Saaty pour l'aide à la décision multi-critères appliquée à des cas d'ingénierie.</p>
+                    <span class="badge">Digitalisation Industrielle</span>
+                    <h3>Tableaux de Bord & Automatisation VBA</h3>
+                    <p>Développement de solutions de traçabilité des non-conformités et de pilotage des performances qualité (Power BI & VBA) inspirées des retours d'expériences industrielles[cite: 4].</p>
                     <div class="tags">
-                        <span>HTML/CSS</span>
-                        <span>JavaScript</span>
-                        <span>Algorithme AHP</span>
+                        <span>Power BI</span>
+                        <span>Excel VBA</span>
+                        <span>Power Query</span>
                     </div>
                 </div>
             </div>
@@ -104,7 +125,11 @@
 
     <!-- Footer -->
     <footer id="contact">
-        <p>&copy; 2026 Portfolio Ingénierie. Hébergé via GitHub Pages.</p>
+        <p>&copy; 2026 Laila Errami | Ingénieure en Génie Aéronautique & Technologies de l'Espace[cite: 4]</p>
+        <p style="margin-top: 10px;">
+            <a href="mailto:lailaerrami01@gmail.com" style="color: #38bdf8; text-decoration: none; margin-right: 15px;"><i class="fas fa-envelope"></i> lailaerrami01@gmail.com</a>
+            <a href="https://www.linkedin.com/in/laila-errami" target="_blank" style="color: #38bdf8; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
