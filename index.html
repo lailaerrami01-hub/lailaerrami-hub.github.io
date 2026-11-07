@@ -6,12 +6,38 @@
     <title>Laila Errami | Ingénieure Aéronautique & Qualité</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Ajustements thématiques aux couleurs de l'AéroClub (Touches de Jaune & Bleu Nuit) */
+        .badge {
+            background-color: #f59e0b !important;
+            color: #0f172a !important;
+            font-weight: 600;
+        }
+        .navbar .logo {
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        .hero h1 {
+            color: #f8fafc;
+        }
+        .hero p span, h2::after {
+            color: #f59e0b;
+        }
+        a.btn.primary {
+            background-color: #f59e0b !important;
+            color: #0f172a !important;
+            font-weight: 600;
+        }
+        a.btn.primary:hover {
+            background-color: #d97706 !important;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">Laila Errami</div>
+        <div class="logo"><i class="fas fa-plane-departure"></i> Laila Errami</div>
         <ul class="nav-links">
             <li><a href="#about">À propos</a></li>
             <li><a href="#experience">Expériences</a></li>
@@ -40,9 +66,9 @@
         <div class="skills-grid" style="grid-template-columns: 1fr;">
             
             <!-- Stage LISI Aerospace détaillé -->
-            <div class="skill-card" style="border: 1px solid #38bdf8;">
-                <span class="badge" style="background-color: #0284c7;">Juillet - Août 2026</span>
-                <h3 style="color: #38bdf8; margin-top: 10px;">Stage - Qualité Produit & Amélioration Continue</h3>
+            <div class="skill-card" style="border: 1px solid #f59e0b;">
+                <span class="badge">Juillet - Août 2026</span>
+                <h3 style="color: #f59e0b; margin-top: 10px;">Stage - Qualité Produit & Amélioration Continue</h3>
                 <p><strong>LISI Aerospace (Lixus Industrie) – Tanger, Maroc</strong></p>
                 <p style="margin-top: 10px; color: #cbd5e1;">
                     Stage ingénieur axé sur la structuration du suivi qualité, la catégorisation des non-conformités et la digitalisation de la saisie terrain sous les normes aéronautiques ISO 9001 et EN/AS 9100.
@@ -93,7 +119,7 @@
 
             <!-- Carte Space Camp & Medi1 TV -->
             <div class="skill-card" style="grid-column: 1 / -1; border: 1px solid #ec4899;">
-                <span class="badge" style="background-color: #ec4899;">2026</span>
+                <span class="badge" style="background-color: #ec4899 !important; color: white !important;">2026</span>
                 <h3 style="margin-top: 10px; color: #f472b6;"><i class="fas fa-space-shuttle"></i> Role Model - Outreach Spatial & Médiatisation</h3>
                 <p><strong>Moroccan Association for Space Studies (MASS) & Space Camp for Kids</strong></p>
                 
@@ -115,7 +141,7 @@
                 </div>
 
                 <div style="margin-top: 15px;">
-                    <a href="https://youtu.be/yk6XqHvx6Sc" target="_blank" class="btn primary" style="padding: 0.5rem 1rem; font-size: 0.9rem; text-decoration: none; display: inline-block; background-color: #db2777;">
+                    <a href="https://youtu.be/yk6XqHvx6Sc" target="_blank" class="btn primary" style="padding: 0.5rem 1rem; font-size: 0.9rem; text-decoration: none; display: inline-block; background-color: #db2777 !important; color: white !important;">
                         <i class="fas fa-tv"></i> Voir le passage sur Medi1 TV →
                     </a>
                 </div>
@@ -123,7 +149,7 @@
 
             <!-- Carte AeroClub ENSAS - Mandat actuel (Conseillère & Ancienne Présidente) -->
             <div class="skill-card">
-                <span class="badge" style="background-color: #10b981;">2026 - Présent</span>
+                <span class="badge">2026 - Présent</span>
                 <h3 style="margin-top: 10px;"><i class="fas fa-hands-helping"></i> Conseillère de l'AeroClub ENSAS</h3>
                 <p><strong>Accompagnement stratégique & Continuité</strong></p>
                 <p style="margin-top: 8px; color: #cbd5e1; line-height: 1.7;">
@@ -136,11 +162,11 @@
                 </div>
             </div>
 
-            <!-- Carte AeroClub ENSAS - Mandat 2025-2026 (Présidence) -->
-            <div class="skill-card">
-                <span class="badge" style="background-color: #8b5cf6;">2025 - 2026</span>
+            <!-- Carte AeroClub ENSAS - Mandat 2025-2026 (Présidence) avec Galerie Photos Officielle -->
+            <div class="skill-card" style="grid-column: 1 / -1;">
+                <span class="badge">2025 - 2026</span>
                 <h3 style="margin-top: 10px;"><i class="fas fa-crown"></i> Présidente de l'AeroClub ENSAS</h3>
-                <p><strong>Pilotage global & Innovation institutionnelle</strong></p>
+                <p><strong>Pilotage global, Management & Événementiel</strong></p>
                 <p style="margin-top: 8px; color: #cbd5e1; line-height: 1.7;">
                     Pilotage de l'ensemble des postes et des commissions du bureau. Management et coordination d'une communauté de <strong>plus de 160 personnes</strong>[cite: 8]. Création d'événements majeurs pour la première fois au sein de l'école :
                 </p>
@@ -148,16 +174,25 @@
                     <li><strong>Journée Aéronautique de l'ENSA Safi :</strong> Exposition des projets phares (aile morphing, avion RC, CONSAT, Smart Runway, drone hybride à parachute)[cite: 9].</li>
                     <li><strong>Concept "Weekend Flight" :</strong> Lancement d'un cycle innovant de vidéoconférences professionnelles[cite: 9].</li>
                 </ul>
+
+                <!-- Galerie photos de la Présidence (Conférences, Professeurs, Directeurs, Événements) -->
+                <p style="margin-top: 15px; font-weight: 600; color: #f59e0b;"><i class="fas fa-images"></i> Souvenirs de Mandat & Conférences (Directeurs, Professeurs & Invités) :</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 15px 0;">
+                    <img src="aeroclub-presidence-1.jpg" alt="Conférence et Événements AeroClub ENSAS" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; border: 1px solid #334155;">
+                    <img src="aeroclub-presidence-2.jpg" alt="Journée Aéronautique ENSA Safi" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; border: 1px solid #334155;">
+                    <img src="aeroclub-presidence-3.jpg" alt="Webinaires et Conférences" style="width: 100%; height: 180px; object-fit: cover; border-radius: 6px; border: 1px solid #334155;">
+                </div>
+
                 <div class="tags" style="margin-top: 15px;">
                     <span>Management 160+ pers</span>
-                    <span>Leadership Stratégique</span>
-                    <span>Événementiel</span>
+                    <span>Conférences & Experts</span>
+                    <span>Relations Institutionnelles</span>
                 </div>
             </div>
 
             <!-- Carte AeroClub ENSAS - Mandat 2024-2025 (Responsable Formations, Matériels & Projets) -->
             <div class="skill-card">
-                <span class="badge" style="background-color: #0284c7;">2024 - 2025</span>
+                <span class="badge">2024 - 2025</span>
                 <h3 style="margin-top: 10px;"><i class="fas fa-tools"></i> Respo Formations, Matériels & Projets</h3>
                 <p><strong>AeroClub ENSAS – Safi</strong></p>
                 <p style="margin-top: 8px; color: #cbd5e1; line-height: 1.7;">
@@ -298,8 +333,8 @@
     <footer id="contact">
         <p>&copy; 2026 Laila Errami | Ingénieure en Génie Aéronautique & Technologies de l'Espace</p>
         <p style="margin-top: 10px;">
-            <a href="mailto:lailaerrami01@gmail.com" style="color: #38bdf8; text-decoration: none; margin-right: 15px;"><i class="fas fa-envelope"></i> lailaerrami01@gmail.com</a>
-            <a href="https://www.linkedin.com/in/laila-errami" target="_blank" style="color: #38bdf8; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:lailaerrami01@gmail.com" style="color: #f59e0b; text-decoration: none; margin-right: 15px;"><i class="fas fa-envelope"></i> lailaerrami01@gmail.com</a>
+            <a href="https://www.linkedin.com/in/laila-errami" target="_blank" style="color: #f59e0b; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </p>
     </footer>
 
